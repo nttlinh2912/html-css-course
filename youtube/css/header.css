@@ -84,7 +84,11 @@
   pointer-events: none;
 }
 
-.bsearch:hover .tooltip {
+.bsearch:hover .tooltip,
+.vsearch:hover .tooltip,
+.create:hover .tooltip,
+.yapps:hover .tooltip,
+.tb2:hover .tooltip {
   opacity: 1;
 }
 
@@ -118,10 +122,6 @@
   pointer-events: none;
 }
 
-.vsearch:hover .tooltip {
-  opacity: 1;
-}
-
 .inconvoice {
   height: 24px;
   margin-top: 4px;
@@ -141,8 +141,47 @@
   height: 25px;
 }
 
+.create {
+  position: relative;
+  cursor: pointer;
+}
+
+.create .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -34px;
+  left: -13px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
 .app {
   height: 25px;
+}
+
+.yapps {
+  position: relative;
+  cursor: pointer;
+}
+
+.yapps .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -34px;
+  left: -28px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
 }
 
 .tb {
@@ -151,6 +190,8 @@
 
 .tb2 {
   position: relative;
+  cursor: pointer;
+}
 }
 
 .tb1 {
@@ -166,6 +207,20 @@
   top: -3px;
   border-color: white;
   border-style: solid;
+}
+
+.tb2 .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -34px;
+  left: -25px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none; 
 }
 
 .kenh {
