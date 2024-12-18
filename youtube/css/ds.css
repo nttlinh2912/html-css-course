@@ -45,6 +45,24 @@
   row-gap: 40px;
 }
 
+@media (max-width:700px){
+  .ygrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width:751px) and (max-width:999px){
+  .ygrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width:1000px){
+  .ygrid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 .time{
   font-family: Arial;
   font-size: 12px;
