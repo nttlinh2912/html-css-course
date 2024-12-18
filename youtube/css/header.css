@@ -122,6 +122,7 @@
   pointer-events: none;
 }
 
+
 .inconvoice {
   height: 24px;
   margin-top: 4px;
@@ -191,7 +192,6 @@
 .tb2 {
   position: relative;
   cursor: pointer;
-}
 }
 
 .tb1 {
